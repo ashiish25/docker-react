@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="frontend">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/75-shorthand.zip!/" />
+      <root url="jar://$PROJECT_DIR$/76-overriding.zip!/" />
+      <root url="jar://$PROJECT_DIR$/84-implementing.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
