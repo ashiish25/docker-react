@@ -13,10 +13,10 @@ jobs:
       - run: docker build -t ashish2504/docker-react:latest -f Dockerfile.dev .
       - run: docker run -e CI=true ashish2504/docker-react:latest npm run test -- --coverage
 
-      -name: Generate deployment package
+      - name: Generate deployment package
       - run: zip -r deploy.zip . -x '*.git*'
 
-      -name: Deploy to EB
+      - name: Deploy to EB
       - uses: einaregilsson/beanstalk-deploy@v18
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
